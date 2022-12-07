@@ -1,0 +1,11 @@
+input:valid{
+    border: 1px solid lightgreen
+}
+
+input:invalid{
+    border: 1px solid tomato
+}
+
+.invalid{
+    background-color: red;
+}
