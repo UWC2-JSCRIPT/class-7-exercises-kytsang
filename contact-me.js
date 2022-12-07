@@ -1,4 +1,40 @@
 // TODO
+
+function showHideFormJob(){
+
+
+    if (document.getElementById('jobOpportunity').selected){
+        //will appear 
+         document.getElementById('jobTitle').style.display='block';
+         document.getElementById('website').style.display='block';
+         // will disappear
+         document.getElementById('language').style.display='none';
+    // }else {
+    //     // will appear
+    //     document.getElementById('jobTitle').style.display='none';
+    //     document.getElementById('website').style.display='none';
+    };
+    if (document.getElementById('talkCode').selected ){
+        //will appear 
+         document.getElementById('language').style.display='block';
+         // will disappear
+        document.getElementById('jobTitle').style.display='none';
+        document.getElementById('website').style.display='none';
+
+        
+    // }else {
+    //     // will appear
+    //     document.getElementById('jobTitle').style.display='none';
+    //     document.getElementById('website').style.display='none';
+    }
+
+}
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function(){
     const name = document.getElementById("name")
     const email = document.getElementById("email")

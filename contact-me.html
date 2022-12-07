@@ -28,20 +28,27 @@
 
         <div class="form-group">
           <label for="kind">Select reason for contacting</label>
-          <select class="form-control" name="kind" id="contact-reason">
-            <option value="choose" selected="selected" disabled>
+          <select class="form-control" name="kind" id="contact-reason" onclick="showHideFormJob()">
+            <option value="choose" selected="selected" disabled >
               Choose one
             </option>
-            <option value="jobOpportunity">Job opportunity</option>
-            <option value="talkCode">Talk Code</option>
+            <option id="jobOpportunity" value="jobOpportunity" >Job opportunity</option>
+            <option id="talkCode" value="talkCode">Talk Code</option>
           </select>
+          <div id="jobTitle"  class="conditional" data-cond-option="kind" data-cond-value="jobOpportunity">
+            <label  for="jobTitle"> Job Title</label>
+            <input  type="text" name="jobTitle" >
+            <div id="website">
+            <label for="website"> Company Website</label>
+            <input type="url" name="website" >
+          </div></div>
+
+          <div id="language" class="conditional" data-cond-option="kind" data-cond-value="talkCode">
+            <label for="language"> Coding Language</label>
+            <input type="text" name="language" >
+          </div> 
+
         </div>
-
-
-
-
-
-        
 
 
 
